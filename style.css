@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+body {     
+    margin:0 ;
+    padding:0 ;  
+    color: rgb(245, 206, 135);  
+    text-align: justify;
+}
