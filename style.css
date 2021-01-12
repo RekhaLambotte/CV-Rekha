@@ -5,12 +5,13 @@
     
 }
 body {     
+
     margin:0 ;
     padding:0 ;  
     color: rgb(250, 136, 6);  
     text-align: justify;
     background-image: url(image/backImg.jpg);
-     
+    background-size: cover;
     
 }
 
@@ -18,68 +19,62 @@ li {
     list-style-type: katakana-iroha;
 }
 
-#page {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(5, 1fr);
-    border: 5px solid white;
+.main {
+    
+    border-radius: 20px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    background opacity: 0.7;
-}
-
-#name {
-    
-    margin-top: 40px;
-    box-shadow: 10px 10px 15px blueviolet;
-}
-
-#photo {
-    grid-row: 1;
-    grid-column: 1;
-    border: 5px solid green;
-    margin-top: 40px;
-    box-shadow: 10px 5px 15px blueviolet;
     
 }
 
-.pres {
-    grid-row: 3;
-    grid-column: 1;
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 20% 60%;
+}
+
+.name {
     margin-top: 40px;
     padding: 5px 10px;
-    box-shadow: 10px 5px 15px blueviolet;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.menu {
+    grid-column: 1/3 ;
+    grid-row: 3 ;
+    margin-top: 40px;
+    padding: 5px 10px;
+    box-shadow: 10px 5px 15px rgba(189, 162, 252, 0.952);
+    border-radius: 10%;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 2;
+    grid-row: 1/4;
+    padding: 5%;
+    max-width: 250px;
+}
+
+.mini{
+    border-radius: 40px;
+    border-style: double;
+    border-color: darkblue;
+}
+
+.pres, .exp, .comp, .form, .divers {
+    
+    margin-top: 40px;
+    padding: 3% 3%;
+    box-shadow: 10px 5px 15px rgba(189, 162, 252, 0.952);
     border-radius: 10%;
     
 }
-.exp {
-    margin-top: 40px;
-    padding: 5px 10px;
-    box-shadow: 10px 5px 15px blueviolet;
-    border-radius: 10%;
-}
 
-.comp {
-    
-    margin-top: 40px;
-    padding: 5px 10px;
-    box-shadow: 10px 5px 15px blueviolet;
-    border-radius: 10%;
-
-}
-
-.form {
-    
-    margin-top: 40px;
-    padding: 5px 10px;
-    box-shadow: 10px 5px 15px blueviolet;
-    border-radius: 10%;
-}
-
-.divers { 
-    margin-top: 40px;
-    padding: 5px 10px;
-    box-shadow: 10px 5px 15px blueviolet;
-    border-radius: 10%;
+.listComp {
+    font-size: 1.4em;
 }
