@@ -1,7 +1,5 @@
 # Curriculum Vitea Rekha Lambotte
-
-# boostrap-Grid-away-grid-ahoy
-Première prise en main de bootstrap.
+Exerxice de HTML-CSS
 
 ## Cadre:
 Cet exercice est effectué dans le cadre de ma deuxième semaine de formation au centre de formation BECODE. 
