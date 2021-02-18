@@ -1,49 +1,22 @@
 *{
-    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 100%;
-
-    
-}
-body {     
-
     margin:0 ;
-    padding:0 ;  
-    color: rgb(250, 136, 6);  
-    text-align: justify;
-    background-image: url(image/backImg.jpg);
-    background-size: cover;
-    line-height: 2em;
+    padding:0 ; 
     
 }
 
-li {
+ul {
     list-style-type: katakana-iroha;
+}
+ol{
+    list-style-type:decimal;
 }
 
 .main {
     width: 80%;
     border-radius: 20px;
-    max-width: 900px;
     margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.grid {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40% 10% 50%;
-}
-
-h1 {
-    font-family: 'Indie Flower', cursive;
-    margin-top: 30px;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 3rem;
-    color: darkmagenta;
-    line-height: 3rem;
+    margin-right: auto;  
 }
 
 h2{
@@ -56,17 +29,12 @@ h2{
 
 .jobname{
     border-bottom: double 4px pink;
-    font-size: 1.5rem;
-    grid-column: 1/2 ;
-    grid-row: 1 ;
     margin-top: 20px;
     padding: 5px 10px;
     text-align: center;
 }
 
 .menu {
-    grid-column: 2/3 ;
-    grid-row: 3 ;
     margin-top: 40px;
     padding: 5px 10px;
     box-shadow: 10px 5px 15px rgba(189, 162, 252, 0.952);
@@ -74,7 +42,7 @@ h2{
     text-align: center;
 }
 
-.menu>ul>li {
+.noPuce {
     list-style: none;
     padding: 3px;
 }
@@ -86,35 +54,162 @@ a:hover{
     color:  rgb(250, 136, 6);
 }
 
-.photo {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column: 2;
-    grid-row: 1/4;
-    padding: 5%;
-    max-width: 500px;
-    align-items: center;
-    justify-content: center;
-}
-
-.mini{
-    width: auto;
-    height: 350px;
-    border-radius: 40px;
-    border: double 10px rgba(139, 0, 139, 0.331);
-}
-
-.pres, .exp, .comp, .form, .divers {
-    
+.pres, .exp, .comp, .form, .divers,.badge {
     margin-top: 50px;
     padding: 50px 100px;
     box-shadow: 10px 5px 15px rgba(189, 162, 252, 0.952);
     border-radius: 10%;
-    height: 300px;
     background-color: rgba(189, 162, 252, 0.158);
+}
+
+#badge{
+    width: 100%;
 }
 
 .listComp {
     font-size: 1.4em;
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {      
+        color: rgb(250, 136, 6);  
+        background-color: black;
+        text-align: justify;
+        line-height: 2em;     
+    }
+    .main {
+        width: 90%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pres{
+        display: none;
+    }
+    h1 {
+        font-family: 'Indie Flower', cursive;
+        margin-top: 30px;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 3rem;
+        color: pink;
+        line-height: 3rem;
+    }
+
+    .grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name{
+        width:100%;
+    }
+
+    .photo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mini{
+        width: auto;
+        height: 250px;
+        border-radius: 50%;
+        border: double 10px pink;
+        margin: 30px;
+    }
+
+    .nav{
+        width:50%;
+    }
+
+    .pres, .exp, .comp, .form, .divers, .badge {
+        height: auto;
+        width: 400px;
+        margin: 50px auto;
+        
+    }
+    .line{
+        border-top: 2px solid white;
+        text-align: center;
+    }
+
+    
+}
+@media screen and (min-width: 1001px) {
+
+    body {      
+    color: rgb(250, 136, 6);  
+    text-align: justify;
+    background-image: url(image/backImg.jpg);
+    background-size: cover;
+    line-height: 2em;
+    
+    }
+
+    .main {
+        width: 80%;
+        max-width: 1100px;
+    }
+
+    .grid {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 40% 10% 50%;
+    }
+    h1 {
+        font-family: 'Indie Flower', cursive;
+        margin-top: 30px;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 3rem;
+        color: darkmagenta;
+        line-height: 3rem;
+    }
+    .jobname{
+        font-size: 1.5rem;
+        grid-column: 1/2 ;
+        grid-row: 1 ;
+    }
+
+    .menu {
+        grid-column: 2/3 ;
+        grid-row: 3 ;
+    }
+
+    .photo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        grid-column: 2;
+        grid-row: 1/4;
+        padding: 5%;
+        max-width: 600px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mini{
+        width: auto;
+        height: 350px;
+        border-radius: 40px;
+        border: double 10px rgba(139, 0, 139, 0.331);
+    }
+
+    .pres, .exp, .comp, .form, .divers, .badge {
+        height: auto;
+        width: 400px;
+        margin: 50px auto;
+        
+    }
+    .line{
+        border-top: 2px solid  rgb(139, 0, 139);
+        text-align: center;
+    }
+    
 }
