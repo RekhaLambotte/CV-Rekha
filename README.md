@@ -6,6 +6,7 @@ Cet exercice est effectué dans le cadre de ma formation au centre de formation 
 Nous sommes en février 2021.
 
 ## Instructions:
+Délai: 14jours
 ![instructions-cv-lba](image/LBA-travail_carnaval_2021.png)
 
 ## Projet déployé: 
@@ -17,6 +18,8 @@ Lien web:  https://rekhalambotte.github.io/CV-Rekha/
 Aucun changement sur les autres points ci-dessous.
 
 Maintenant que j'ai acquis plus d'expérience, j'ai vraiment passé un bon moment à faire ce projet.
+
+Je pense avoir fait le projet en environs 4 jours.
 
 
 ===================================================================
